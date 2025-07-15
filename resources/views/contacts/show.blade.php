@@ -1,7 +1,7 @@
 <x-app-layout title="Detalhes do Contato">
-    <h1 class="mb-6 text-3xl font-semibold text-gray-900 dark:text-gray-100">Detalhes do Contato</h1>
+    <h1 class="mb-6 text-3xl font-semibold text-gray-900">Detalhes do Contato</h1>
 
-    <div class="max-w-md space-y-4 text-gray-800 dark:text-gray-200">
+    <div class="max-w-md space-y-4 text-gray-800">
         <p><strong class="font-semibold">ID:</strong> {{ $contact->id }}</p>
         <p><strong class="font-semibold">Nome:</strong> {{ $contact->name }}</p>
         <p><strong class="font-semibold">Contato:</strong> {{ $contact->contact }}</p>
