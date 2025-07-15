@@ -1,16 +1,16 @@
 <x-app-layout title="Contatos">
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6 py-12">
-        <section class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
+        <section class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
             <header class="mb-6">
-                <h2 class="text-lg font-medium text-gray-900">
+                <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
                     {{ __('Lista de Contatos') }}
                 </h2>
-                <p class="mt-1 text-sm text-gray-600">
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
                     {{ __('Visualize, edite ou exclua seus contatos cadastrados.') }}
                 </p>
             </header>
@@ -29,8 +29,8 @@
                 </div>
             @else
                 <div class="overflow-x-auto rounded-md">
-                    <table class="min-w-full divide-y divide-gray-200 border border-gray-200 shadow-sm">
-                        <thead class="bg-gray-100 text-gray-700 text-left text-sm uppercase tracking-wider">
+                    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700 shadow-sm">
+                        <thead class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-left text-sm uppercase tracking-wider">
                             <tr>
                                 <th class="px-4 py-3">ID</th>
                                 <th class="px-4 py-3">Nome</th>
@@ -39,9 +39,9 @@
                                 <th class="px-4 py-3 text-center">Ações</th>
                             </tr>
                         </thead>
-                        <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                        <tbody class="bg-white dark:bg-gray-900 divide-y divide-gray-200 dark:divide-gray-800 text-sm">
                             @foreach($contacts as $contact)
-                                <tr class="hover:bg-gray-50">
+                                <tr class="hover:bg-gray-50 dark:hover:bg-gray-800">
                                     <td class="px-4 py-3">{{ $contact->id }}</td>
                                     <td class="px-4 py-3">{{ $contact->name }}</td>
                                     <td class="px-4 py-3">{{ $contact->contact }}</td>
